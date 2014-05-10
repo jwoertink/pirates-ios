@@ -30,14 +30,20 @@
                                 <state key="normal" title="N">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonNorth:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3n2-Mc-6KE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2A-uf-6BZ">
-                                <rect key="frame" x="270" y="489" width="30" height="30"/>
+                                <rect key="frame" x="202" y="489" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="W">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonWest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jbC-aE-c46"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDm-E8-oe8">
                                 <rect key="frame" x="236" y="518" width="30" height="30"/>
@@ -46,14 +52,20 @@
                                 <state key="normal" title="S">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonSouth:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UQF-Nv-Mod"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL5-oI-yTV">
-                                <rect key="frame" x="202" y="489" width="30" height="30"/>
+                                <rect key="frame" x="264" y="489" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="E">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonEast:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tYi-Ie-Gok"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wX1-WU-TdC">
                                 <rect key="frame" x="0.0" y="440" width="164" height="127"/>
@@ -110,9 +122,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="context" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X09-lU-1JI">
+                                <rect key="frame" x="75" y="280" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="armorLabelValue" destination="tDl-ky-VIX" id="qtl-zG-eoS"/>
+                        <outlet property="contextLabel" destination="X09-lU-1JI" id="Nuc-zo-49z"/>
+                        <outlet property="damageLabelValue" destination="GN4-qN-GVr" id="haE-OK-k4Z"/>
+                        <outlet property="healthLabelValue" destination="5as-b6-Bwb" id="wWz-d9-wd8"/>
+                        <outlet property="weaponLabelValue" destination="KT5-SI-go7" id="HHY-86-Po6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
