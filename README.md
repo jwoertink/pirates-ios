@@ -3,19 +3,21 @@
 This is a challenge app from the udemy course for ios.
 
 ## Objective
-Control the character by pressing on the direction buttons around the grid. Find new items, or enemies. Locate the boss pirate and defeat him.
+Move the character around by pressing on the direction buttons. Find new items, or enemies with each move. Locate the boss pirate and defeat him. Game is over when pirate boss is defeated.
 
 ## Requirements
 
-* A user should be able to navigate to different tiles by pressing one of 4 directional arrows
-* When a move is not available, that arrow should not be visible or inactive
+* A user should be able to navigate to different tiles by pressing one of 4 directional buttons
+* When a move is not available, that button should not be visible or be inactive
 * The game character should have `int health`, `int damage`, `Weapon weapon`, and `Armor armor`.
 * Armor and Weapon objects have a `NSString name` and `int damage` or `int health` bonus modifier where appropriate
-* The view needs 1 label for the story. 1 button to perform an action on a tile. An area to display character stats
-* The tile grid should be 4x3
-
+* The view contains the directional buttons, the character stats, an action button, and the context story for the current location of the character.
+* The starting grid should be 4x3
+* Each location is considered a `Tile`. A tile should have a `CGPoint point`, `NSString description`, `UIImageView background`. It should also have a way to handle if there is an item, or an enemy on that tile.
+* The game should have a reset button to reset the character position and all stats.
 
 ## Steps
+
 1: Setting up the storyboard, a basic Tile object and a Factory.
 
 2: Navigating between tiles, adding a background image and upgrading the story.
