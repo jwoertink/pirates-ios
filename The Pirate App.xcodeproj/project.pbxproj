@@ -21,6 +21,9 @@
 		3FD3AEAE191D905B009DEE38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD3AE90191D905B009DEE38 /* UIKit.framework */; };
 		3FD3AEB6191D905B009DEE38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AEB4191D905B009DEE38 /* InfoPlist.strings */; };
 		3FD3AEB8191D905B009DEE38 /* The_Pirate_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEB7191D905B009DEE38 /* The_Pirate_AppTests.m */; };
+		3FD3AEC3191DA70B009DEE38 /* JWCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEC2191DA70B009DEE38 /* JWCharacter.m */; };
+		3FD3AEC6191DA73D009DEE38 /* JWWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEC5191DA73D009DEE38 /* JWWeapon.m */; };
+		3FD3AEC9191DA771009DEE38 /* JWArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEC8191DA771009DEE38 /* JWArmor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		3FD3AEB3191D905B009DEE38 /* The Pirate AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The Pirate AppTests-Info.plist"; sourceTree = "<group>"; };
 		3FD3AEB5191D905B009DEE38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FD3AEB7191D905B009DEE38 /* The_Pirate_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Pirate_AppTests.m; sourceTree = "<group>"; };
+		3FD3AEC1191DA70B009DEE38 /* JWCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWCharacter.h; sourceTree = "<group>"; };
+		3FD3AEC2191DA70B009DEE38 /* JWCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWCharacter.m; sourceTree = "<group>"; };
+		3FD3AEC4191DA73D009DEE38 /* JWWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWWeapon.h; sourceTree = "<group>"; };
+		3FD3AEC5191DA73D009DEE38 /* JWWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWeapon.m; sourceTree = "<group>"; };
+		3FD3AEC7191DA771009DEE38 /* JWArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWArmor.h; sourceTree = "<group>"; };
+		3FD3AEC8191DA771009DEE38 /* JWArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWArmor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,12 @@
 				3FD3AE9B191D905B009DEE38 /* JWAppDelegate.h */,
 				3FD3AE9C191D905B009DEE38 /* JWAppDelegate.m */,
 				3FD3AE9E191D905B009DEE38 /* Main.storyboard */,
+				3FD3AEC1191DA70B009DEE38 /* JWCharacter.h */,
+				3FD3AEC7191DA771009DEE38 /* JWArmor.h */,
+				3FD3AEC8191DA771009DEE38 /* JWArmor.m */,
+				3FD3AEC4191DA73D009DEE38 /* JWWeapon.h */,
+				3FD3AEC5191DA73D009DEE38 /* JWWeapon.m */,
+				3FD3AEC2191DA70B009DEE38 /* JWCharacter.m */,
 				3FD3AEA1191D905B009DEE38 /* JWViewController.h */,
 				3FD3AEA2191D905B009DEE38 /* JWViewController.m */,
 				3FD3AEA4191D905B009DEE38 /* Images.xcassets */,
@@ -250,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD3AEC6191DA73D009DEE38 /* JWWeapon.m in Sources */,
 				3FD3AE99191D905B009DEE38 /* main.m in Sources */,
+				3FD3AEC9191DA771009DEE38 /* JWArmor.m in Sources */,
 				3FD3AEA3191D905B009DEE38 /* JWViewController.m in Sources */,
+				3FD3AEC3191DA70B009DEE38 /* JWCharacter.m in Sources */,
 				3FD3AE9D191D905B009DEE38 /* JWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
