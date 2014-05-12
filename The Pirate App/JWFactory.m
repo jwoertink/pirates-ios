@@ -44,19 +44,19 @@
     int maxRows = 3;
     int maxCols = 4;
     for (int row = 0; row < maxRows; row++) {
+        NSMutableArray *tileRow = [[NSMutableArray alloc] init];
         for (int col = 0; col < maxCols; col++) {
             JWTile *tile = [[JWTile alloc] init];
             tile.point = CGPointMake(row, col);
             int idx = row + col + (maxRows * row);
             tile.background = [UIImage imageNamed:[backgrounds objectAtIndex:idx]];
             tile.description = [descriptions objectAtIndex:idx];
-            [tiles addObject:tile];
+            [tileRow addObject:tile];
         }
+        [tiles addObject:tileRow];
     }
     
-    NSMutableArray *grid = [[NSMutableArray alloc] init];
-    [grid addObject:tiles];
-    return grid;
+    return tiles;
 }
 
 @end
