@@ -24,6 +24,19 @@
 		3FD3AEC3191DA70B009DEE38 /* JWCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEC2191DA70B009DEE38 /* JWCharacter.m */; };
 		3FD3AEC6191DA73D009DEE38 /* JWWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEC5191DA73D009DEE38 /* JWWeapon.m */; };
 		3FD3AEC9191DA771009DEE38 /* JWArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEC8191DA771009DEE38 /* JWArmor.m */; };
+		3FD3AECC1920532B009DEE38 /* JWTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AECB1920532B009DEE38 /* JWTile.m */; };
+		3FD3AED919205C83009DEE38 /* chest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AECD19205C83009DEE38 /* chest.jpg */; };
+		3FD3AEDA19205C83009DEE38 /* fleet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AECE19205C83009DEE38 /* fleet.jpg */; };
+		3FD3AEDB19205C83009DEE38 /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AECF19205C83009DEE38 /* map.jpg */; };
+		3FD3AEDC19205C83009DEE38 /* parrot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED019205C83009DEE38 /* parrot.jpg */; };
+		3FD3AEDD19205C83009DEE38 /* pirate-boss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED119205C83009DEE38 /* pirate-boss.jpg */; };
+		3FD3AEDE19205C83009DEE38 /* ship-battle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED219205C83009DEE38 /* ship-battle.jpg */; };
+		3FD3AEDF19205C83009DEE38 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED319205C83009DEE38 /* ship.png */; };
+		3FD3AEE019205C83009DEE38 /* skull-fire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED419205C83009DEE38 /* skull-fire.jpg */; };
+		3FD3AEE119205C83009DEE38 /* skull.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED519205C83009DEE38 /* skull.jpg */; };
+		3FD3AEE219205C83009DEE38 /* squid-attack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED619205C83009DEE38 /* squid-attack.jpg */; };
+		3FD3AEE319205C83009DEE38 /* swords.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED719205C83009DEE38 /* swords.jpg */; };
+		3FD3AEE419205C83009DEE38 /* weapons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED819205C83009DEE38 /* weapons.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +75,20 @@
 		3FD3AEC5191DA73D009DEE38 /* JWWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWeapon.m; sourceTree = "<group>"; };
 		3FD3AEC7191DA771009DEE38 /* JWArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWArmor.h; sourceTree = "<group>"; };
 		3FD3AEC8191DA771009DEE38 /* JWArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWArmor.m; sourceTree = "<group>"; };
+		3FD3AECA1920532B009DEE38 /* JWTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTile.h; sourceTree = "<group>"; };
+		3FD3AECB1920532B009DEE38 /* JWTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTile.m; sourceTree = "<group>"; };
+		3FD3AECD19205C83009DEE38 /* chest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chest.jpg; sourceTree = "<group>"; };
+		3FD3AECE19205C83009DEE38 /* fleet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fleet.jpg; sourceTree = "<group>"; };
+		3FD3AECF19205C83009DEE38 /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
+		3FD3AED019205C83009DEE38 /* parrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parrot.jpg; sourceTree = "<group>"; };
+		3FD3AED119205C83009DEE38 /* pirate-boss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pirate-boss.jpg"; sourceTree = "<group>"; };
+		3FD3AED219205C83009DEE38 /* ship-battle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ship-battle.jpg"; sourceTree = "<group>"; };
+		3FD3AED319205C83009DEE38 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+		3FD3AED419205C83009DEE38 /* skull-fire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "skull-fire.jpg"; sourceTree = "<group>"; };
+		3FD3AED519205C83009DEE38 /* skull.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skull.jpg; sourceTree = "<group>"; };
+		3FD3AED619205C83009DEE38 /* squid-attack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "squid-attack.jpg"; sourceTree = "<group>"; };
+		3FD3AED719205C83009DEE38 /* swords.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swords.jpg; sourceTree = "<group>"; };
+		3FD3AED819205C83009DEE38 /* weapons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weapons.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +158,8 @@
 				3FD3AEC4191DA73D009DEE38 /* JWWeapon.h */,
 				3FD3AEC5191DA73D009DEE38 /* JWWeapon.m */,
 				3FD3AEA1191D905B009DEE38 /* JWViewController.h */,
+				3FD3AECA1920532B009DEE38 /* JWTile.h */,
+				3FD3AECB1920532B009DEE38 /* JWTile.m */,
 				3FD3AEA2191D905B009DEE38 /* JWViewController.m */,
 				3FD3AEA4191D905B009DEE38 /* Images.xcassets */,
 				3FD3AE93191D905B009DEE38 /* Supporting Files */,
@@ -142,6 +171,18 @@
 			isa = PBXGroup;
 			children = (
 				3FD3AE94191D905B009DEE38 /* The Pirate App-Info.plist */,
+				3FD3AECD19205C83009DEE38 /* chest.jpg */,
+				3FD3AECE19205C83009DEE38 /* fleet.jpg */,
+				3FD3AECF19205C83009DEE38 /* map.jpg */,
+				3FD3AED019205C83009DEE38 /* parrot.jpg */,
+				3FD3AED119205C83009DEE38 /* pirate-boss.jpg */,
+				3FD3AED219205C83009DEE38 /* ship-battle.jpg */,
+				3FD3AED319205C83009DEE38 /* ship.png */,
+				3FD3AED419205C83009DEE38 /* skull-fire.jpg */,
+				3FD3AED519205C83009DEE38 /* skull.jpg */,
+				3FD3AED619205C83009DEE38 /* squid-attack.jpg */,
+				3FD3AED719205C83009DEE38 /* swords.jpg */,
+				3FD3AED819205C83009DEE38 /* weapons.jpg */,
 				3FD3AE95191D905B009DEE38 /* InfoPlist.strings */,
 				3FD3AE98191D905B009DEE38 /* main.m */,
 				3FD3AE9A191D905B009DEE38 /* The Pirate App-Prefix.pch */,
@@ -244,9 +285,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD3AEDB19205C83009DEE38 /* map.jpg in Resources */,
+				3FD3AEDF19205C83009DEE38 /* ship.png in Resources */,
+				3FD3AEDC19205C83009DEE38 /* parrot.jpg in Resources */,
 				3FD3AEA5191D905B009DEE38 /* Images.xcassets in Resources */,
+				3FD3AEE019205C83009DEE38 /* skull-fire.jpg in Resources */,
+				3FD3AEE319205C83009DEE38 /* swords.jpg in Resources */,
 				3FD3AE97191D905B009DEE38 /* InfoPlist.strings in Resources */,
 				3FD3AEA0191D905B009DEE38 /* Main.storyboard in Resources */,
+				3FD3AEE119205C83009DEE38 /* skull.jpg in Resources */,
+				3FD3AED919205C83009DEE38 /* chest.jpg in Resources */,
+				3FD3AEDA19205C83009DEE38 /* fleet.jpg in Resources */,
+				3FD3AEDD19205C83009DEE38 /* pirate-boss.jpg in Resources */,
+				3FD3AEE219205C83009DEE38 /* squid-attack.jpg in Resources */,
+				3FD3AEDE19205C83009DEE38 /* ship-battle.jpg in Resources */,
+				3FD3AEE419205C83009DEE38 /* weapons.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +323,7 @@
 				3FD3AEC9191DA771009DEE38 /* JWArmor.m in Sources */,
 				3FD3AEA3191D905B009DEE38 /* JWViewController.m in Sources */,
 				3FD3AEC3191DA70B009DEE38 /* JWCharacter.m in Sources */,
+				3FD3AECC1920532B009DEE38 /* JWTile.m in Sources */,
 				3FD3AE9D191D905B009DEE38 /* JWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
