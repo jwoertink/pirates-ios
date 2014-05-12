@@ -25,6 +25,12 @@
     self.damageLabelValue.text = [@(self.character.damage) stringValue];
     self.weaponLabelValue.text = self.character.weapon.name;
     self.armorLabelValue.text = self.character.armor.name;
+    
+    self.gameTiles = [JWFactory generateTiles];
+    self.currentTile = [[self.gameTiles objectAtIndex:0] objectAtIndex:0];
+    
+    self.contextLabel.text = self.currentTile.description;
+    self.backgroundImage.image = self.currentTile.background;
 }
 
 - (void)didReceiveMemoryWarning

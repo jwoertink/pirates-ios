@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JWCharacter.h"
+#import "JWFactory.h"
 
 @interface JWViewController : UIViewController
 
@@ -18,6 +19,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *armorLabelValue;
 @property (strong, nonatomic) IBOutlet UILabel *contextLabel;
 @property (strong, nonatomic) JWCharacter *character;
+@property (strong, nonatomic) NSMutableArray *gameTiles;
+@property (strong, nonatomic) JWTile *currentTile;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 // Button Actions
 - (IBAction)buttonNorth:(UIButton *)sender;

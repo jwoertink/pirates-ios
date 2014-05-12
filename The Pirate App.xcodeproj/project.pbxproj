@@ -37,6 +37,7 @@
 		3FD3AEE219205C83009DEE38 /* squid-attack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED619205C83009DEE38 /* squid-attack.jpg */; };
 		3FD3AEE319205C83009DEE38 /* swords.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED719205C83009DEE38 /* swords.jpg */; };
 		3FD3AEE419205C83009DEE38 /* weapons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3AED819205C83009DEE38 /* weapons.jpg */; };
+		3FD3AEE719206265009DEE38 /* JWFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEE619206265009DEE38 /* JWFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		3FD3AED619205C83009DEE38 /* squid-attack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "squid-attack.jpg"; sourceTree = "<group>"; };
 		3FD3AED719205C83009DEE38 /* swords.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swords.jpg; sourceTree = "<group>"; };
 		3FD3AED819205C83009DEE38 /* weapons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weapons.jpg; sourceTree = "<group>"; };
+		3FD3AEE519206265009DEE38 /* JWFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFactory.h; sourceTree = "<group>"; };
+		3FD3AEE619206265009DEE38 /* JWFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,9 +160,11 @@
 				3FD3AEC8191DA771009DEE38 /* JWArmor.m */,
 				3FD3AEC4191DA73D009DEE38 /* JWWeapon.h */,
 				3FD3AEC5191DA73D009DEE38 /* JWWeapon.m */,
-				3FD3AEA1191D905B009DEE38 /* JWViewController.h */,
 				3FD3AECA1920532B009DEE38 /* JWTile.h */,
 				3FD3AECB1920532B009DEE38 /* JWTile.m */,
+				3FD3AEE519206265009DEE38 /* JWFactory.h */,
+				3FD3AEE619206265009DEE38 /* JWFactory.m */,
+				3FD3AEA1191D905B009DEE38 /* JWViewController.h */,
 				3FD3AEA2191D905B009DEE38 /* JWViewController.m */,
 				3FD3AEA4191D905B009DEE38 /* Images.xcassets */,
 				3FD3AE93191D905B009DEE38 /* Supporting Files */,
@@ -325,6 +330,7 @@
 				3FD3AEC3191DA70B009DEE38 /* JWCharacter.m in Sources */,
 				3FD3AECC1920532B009DEE38 /* JWTile.m in Sources */,
 				3FD3AE9D191D905B009DEE38 /* JWAppDelegate.m in Sources */,
+				3FD3AEE719206265009DEE38 /* JWFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
