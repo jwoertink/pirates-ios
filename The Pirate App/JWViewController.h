@@ -7,14 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JWCharacter.h"
 
 @interface JWViewController : UIViewController
+
+// Properties
 @property (strong, nonatomic) IBOutlet UILabel *healthLabelValue;
 @property (strong, nonatomic) IBOutlet UILabel *damageLabelValue;
 @property (strong, nonatomic) IBOutlet UILabel *weaponLabelValue;
 @property (strong, nonatomic) IBOutlet UILabel *armorLabelValue;
 @property (strong, nonatomic) IBOutlet UILabel *contextLabel;
+@property (strong, nonatomic) JWCharacter *character;
 
+// Button Actions
 - (IBAction)buttonNorth:(UIButton *)sender;
 - (IBAction)buttonSouth:(UIButton *)sender;
 - (IBAction)buttonWest:(UIButton *)sender;

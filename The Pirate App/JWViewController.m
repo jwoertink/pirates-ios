@@ -18,6 +18,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.character = [[JWCharacter alloc] init];
+    [self.character initDefaultValues];
+    self.healthLabelValue.text = [@(self.character.health) stringValue];
+    self.damageLabelValue.text = [@(self.character.damage) stringValue];
+    self.weaponLabelValue.text = self.character.weapon.name;
+    self.armorLabelValue.text = self.character.armor.name;
 }
 
 - (void)didReceiveMemoryWarning

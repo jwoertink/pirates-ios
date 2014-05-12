@@ -17,4 +17,6 @@
 @property (strong, nonatomic) JWWeapon *weapon;
 @property (strong, nonatomic) JWArmor *armor;
 
+-(void) initDefaultValues;
+
 @end
