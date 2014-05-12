@@ -32,12 +32,12 @@
 
 -(BOOL) canMoveEast:(CGPoint)point
 {
-    return point.y < 4;
+    return point.y < 3;
 }
 
 -(BOOL) canMoveNorth:(CGPoint)point
 {
-    return point.x < 3;
+    return point.x < 2;
 }
 
 -(BOOL) canMoveSouth:(CGPoint)point
