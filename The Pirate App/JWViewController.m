@@ -27,10 +27,21 @@
     self.armorLabelValue.text = self.character.armor.name;
     
     self.gameTiles = [JWFactory generateTiles];
-    self.currentTile = [[self.gameTiles objectAtIndex:0] objectAtIndex:0];
+    [self updateTile];
     
-    self.contextLabel.text = self.currentTile.description;
-    self.backgroundImage.image = self.currentTile.background;
+    [self.buttonNorth addTarget: self
+                        action: @selector(buttonNorthPressed:)
+              forControlEvents: UIControlEventTouchUpInside];
+    [self.buttonSouth addTarget: self
+                         action: @selector(buttonSouthPressed:)
+               forControlEvents: UIControlEventTouchUpInside];
+    [self.buttonEast addTarget: self
+                         action: @selector(buttonEastPressed:)
+               forControlEvents: UIControlEventTouchUpInside];
+    [self.buttonWest addTarget: self
+                         action: @selector(buttonWestPressed:)
+               forControlEvents: UIControlEventTouchUpInside];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,15 +50,44 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonNorth:(UIButton *)sender {
+// Set all directional button states. Hide the button if the character can't move in that direction
+-(void) setButtonState
+{
+    CGPoint currentPosition = self.currentTile.point;
+    self.buttonWest.hidden = ![self.character canMoveWest:currentPosition];
+    self.buttonEast.hidden = ![self.character canMoveEast:currentPosition];
+    self.buttonNorth.hidden = ![self.character canMoveNorth:currentPosition];
+    self.buttonSouth.hidden = ![self.character canMoveSouth:currentPosition];
 }
 
-- (IBAction)buttonSouth:(UIButton *)sender {
+-(void) updateTile
+{
+    NSLog(@"X: %d Y: %d", self.character.x, self.character.y);
+    
+    self.currentTile = [[self.gameTiles objectAtIndex:self.character.x] objectAtIndex:self.character.y];
+    self.contextLabel.text = self.currentTile.description;
+    self.backgroundImage.image = self.currentTile.background;
+    [self setButtonState];
 }
 
-- (IBAction)buttonWest:(UIButton *)sender {
+-(IBAction) buttonNorthPressed:(id)sender
+{
+    self.character.x += 1;
+    [self updateTile];
 }
-
-- (IBAction)buttonEast:(UIButton *)sender {
+-(IBAction) buttonSouthPressed:(id)sender
+{
+    self.character.x -= 1;
+    [self updateTile];
+}
+-(IBAction) buttonEastPressed:(id)sender
+{
+    self.character.y += 1;
+    [self updateTile];
+}
+-(IBAction) buttonWestPressed:(id)sender
+{
+    self.character.y -= 1;
+    [self updateTile];
 }
 @end

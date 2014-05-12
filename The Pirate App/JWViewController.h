@@ -22,11 +22,15 @@
 @property (strong, nonatomic) NSMutableArray *gameTiles;
 @property (strong, nonatomic) JWTile *currentTile;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (strong, nonatomic) IBOutlet UIButton *buttonNorth;
+@property (strong, nonatomic) IBOutlet UIButton *buttonSouth;
+@property (strong, nonatomic) IBOutlet UIButton *buttonEast;
+@property (strong, nonatomic) IBOutlet UIButton *buttonWest;
 
-// Button Actions
-- (IBAction)buttonNorth:(UIButton *)sender;
-- (IBAction)buttonSouth:(UIButton *)sender;
-- (IBAction)buttonWest:(UIButton *)sender;
-- (IBAction)buttonEast:(UIButton *)sender;
-
+-(void) setButtonState;
+-(void) updateTile;
+-(IBAction) buttonNorthPressed:(id)sender;
+-(IBAction) buttonSouthPressed:(id)sender;
+-(IBAction) buttonEastPressed:(id)sender;
+-(IBAction) buttonWestPressed:(id)sender;
 @end

@@ -14,9 +14,15 @@
 
 @property (nonatomic) int health;
 @property (nonatomic) int damage;
+@property (nonatomic) int x;
+@property (nonatomic) int y;
 @property (strong, nonatomic) JWWeapon *weapon;
 @property (strong, nonatomic) JWArmor *armor;
 
 -(void) initDefaultValues;
+-(BOOL) canMoveWest:(CGPoint)point;
+-(BOOL) canMoveEast:(CGPoint)point;
+-(BOOL) canMoveNorth:(CGPoint)point;
+-(BOOL) canMoveSouth:(CGPoint)point;
 
 @end
