@@ -41,6 +41,9 @@
     [self.buttonWest addTarget: self
                          action: @selector(buttonWestPressed:)
                forControlEvents: UIControlEventTouchUpInside];
+    [self.buttonAction addTarget: self
+                          action: @selector(buttonActionPressed:)
+                forControlEvents: UIControlEventTouchUpInside];
     
 }
 
@@ -62,11 +65,16 @@
 
 -(void) updateTile
 {
-    NSLog(@"X: %d Y: %d", self.character.x, self.character.y);
-    
     self.currentTile = [[self.gameTiles objectAtIndex:self.character.x] objectAtIndex:self.character.y];
     self.contextLabel.text = self.currentTile.description;
     self.backgroundImage.image = self.currentTile.background;
+    if ([self.currentTile.actionTitle length] > 0) {
+        [self.buttonAction setTitle:self.currentTile.actionTitle forState:UIControlStateNormal];
+        self.buttonAction.hidden = NO;
+    } else {
+        self.buttonAction.hidden = YES;
+    }
+    
     [self setButtonState];
 }
 
@@ -89,5 +97,9 @@
 {
     self.character.y -= 1;
     [self updateTile];
+}
+-(IBAction) buttonActionPressed:(id)sender
+{
+    [self.currentTile performAction];
 }
 @end

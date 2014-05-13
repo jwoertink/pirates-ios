@@ -26,6 +26,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *buttonSouth;
 @property (strong, nonatomic) IBOutlet UIButton *buttonEast;
 @property (strong, nonatomic) IBOutlet UIButton *buttonWest;
+@property (strong, nonatomic) IBOutlet UIButton *buttonAction;
 
 -(void) setButtonState;
 -(void) updateTile;
@@ -33,4 +34,5 @@
 -(IBAction) buttonSouthPressed:(id)sender;
 -(IBAction) buttonEastPressed:(id)sender;
 -(IBAction) buttonWestPressed:(id)sender;
+-(IBAction) buttonActionPressed:(id)sender;
 @end

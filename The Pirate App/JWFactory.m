@@ -40,6 +40,19 @@
                              @"A giant squid!",
                              @"a lost pirate's sword",
                              @"You found some weapons", nil];
+    NSArray *actionTitles = [[NSArray alloc] initWithObjects:
+                             @"View",
+                             @"View",
+                             @"View",
+                             @"Fight!",
+                             @"Fight!",
+                             @"",
+                             @"",
+                             @"Pick up",
+                             @"",
+                             @"Fight!",
+                             @"Pick up",
+                             @"Pick up", nil];
     
     int maxRows = 3;
     int maxCols = 4;
@@ -51,6 +64,8 @@
             int idx = row + col + (maxRows * row);
             tile.background = [UIImage imageNamed:[backgrounds objectAtIndex:idx]];
             tile.description = [descriptions objectAtIndex:idx];
+            tile.actionTitle = [actionTitles objectAtIndex:idx];
+            [tile setAction];
             [tileRow addObject:tile];
         }
         [tiles addObject:tileRow];
