@@ -25,6 +25,20 @@
     self.damage = 1 + self.weapon.damage; // Amount of damage the character inflicts
 }
 
+-(void) attack:(JWCharacter *)enemy
+{
+    int hitEnemy = arc4random() % self.damage;
+    enemy.health -= hitEnemy;
+    
+    int hitMe = arc4random() % enemy.damage;
+    self.health -= hitMe;
+}
+
+-(BOOL) isAlive
+{
+    return self.health > 0;
+}
+
 -(BOOL) canMoveWest:(CGPoint)point
 {
     return point.y > 0;

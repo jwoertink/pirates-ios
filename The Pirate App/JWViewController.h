@@ -30,6 +30,7 @@
 
 -(void) setButtonState;
 -(void) updateTile;
+-(void) updateCharacter;
 -(IBAction) buttonNorthPressed:(id)sender;
 -(IBAction) buttonSouthPressed:(id)sender;
 -(IBAction) buttonEastPressed:(id)sender;

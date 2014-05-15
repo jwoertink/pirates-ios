@@ -20,6 +20,8 @@
 @property (strong, nonatomic) JWArmor *armor;
 
 -(void) initDefaultValues;
+-(void) attack:(JWCharacter *)enemy;
+-(BOOL) isAlive;
 -(BOOL) canMoveWest:(CGPoint)point;
 -(BOOL) canMoveEast:(CGPoint)point;
 -(BOOL) canMoveNorth:(CGPoint)point;

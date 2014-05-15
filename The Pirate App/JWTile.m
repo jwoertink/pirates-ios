@@ -12,24 +12,33 @@
 
 -(void) setAction
 {
-    if ([self.actionTitle isEqualToString:@"View"]) {
-        
-    } else if ([self.actionTitle isEqualToString:@"Fight!"]) {
+    if ([self.actionTitle isEqualToString:@"Fight!"]) {
         self.surprise = [[JWCharacter alloc] init];
+        [self.surprise initDefaultValues];
+        
     } else if ([self.actionTitle isEqualToString:@"Pick up"]) {
         self.surprise = [[JWWeapon alloc] init];
-    } else {
-        NSLog(@"other");
     }
 }
 
--(void) performAction
+-(void) performAction:(JWCharacter *)character
 {
     if ([self.actionTitle isEqualToString:@"View"]) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"What's this?" message:@"Doesn't look helpful" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alertView show];
     } else if ([self.actionTitle isEqualToString:@"Fight!"]) {
-        NSLog(@"Fighting!");
+        if ([character isAlive]) {
+            if ([self.surprise isAlive]) {
+                [character attack:self.surprise];
+            } else {
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"You Win!" message:@"Enemy is dead" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                [alertView show];
+            }
+        } else {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Ah Nu!" message:@"You've been beached, bru!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [alertView show];
+        }
+        
     } else if ([self.actionTitle isEqualToString:@"Pick up"]) {
         NSLog(@"Picking up item");
     } else {

@@ -21,10 +21,7 @@
     
     self.character = [[JWCharacter alloc] init];
     [self.character initDefaultValues];
-    self.healthLabelValue.text = [@(self.character.health) stringValue];
-    self.damageLabelValue.text = [@(self.character.damage) stringValue];
-    self.weaponLabelValue.text = self.character.weapon.name;
-    self.armorLabelValue.text = self.character.armor.name;
+    [self updateCharacter];
     
     self.gameTiles = [JWFactory generateTiles];
     [self updateTile];
@@ -78,6 +75,14 @@
     [self setButtonState];
 }
 
+-(void) updateCharacter
+{
+    self.healthLabelValue.text = [@(self.character.health) stringValue];
+    self.damageLabelValue.text = [@(self.character.damage) stringValue];
+    self.weaponLabelValue.text = self.character.weapon.name;
+    self.armorLabelValue.text = self.character.armor.name;
+}
+
 -(IBAction) buttonNorthPressed:(id)sender
 {
     self.character.x += 1;
@@ -100,6 +105,7 @@
 }
 -(IBAction) buttonActionPressed:(id)sender
 {
-    [self.currentTile performAction];
+    [self.currentTile performAction:self.character];
+    [self updateCharacter];
 }
 @end

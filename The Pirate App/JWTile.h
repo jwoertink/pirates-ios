@@ -18,7 +18,7 @@
 // not sure what the surprise is. Could be an item, could be an enemy
 @property (strong, nonatomic) id surprise;
 
--(void) performAction;
+-(void) performAction:(JWCharacter *)character;
 -(void) setAction;
 
 @end
