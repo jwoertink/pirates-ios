@@ -19,12 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.character = [[JWCharacter alloc] init];
-    [self.character initDefaultValues];
-    [self updateCharacter];
-    
-    self.gameTiles = [JWFactory generateTiles];
-    [self updateTile];
+    [self resetGame];
     
     [self.buttonNorth addTarget: self
                         action: @selector(buttonNorthPressed:)
@@ -83,6 +78,16 @@
     self.armorLabelValue.text = self.character.armor.name;
 }
 
+-(void) resetGame
+{
+    self.character = [[JWCharacter alloc] init];
+    [self.character initDefaultValues];
+    [self updateCharacter];
+    
+    self.gameTiles = [JWFactory generateTiles];
+    [self updateTile];
+}
+
 -(IBAction) buttonNorthPressed:(id)sender
 {
     self.character.x += 1;
@@ -107,5 +112,9 @@
 {
     [self.currentTile performAction:self.character];
     [self updateCharacter];
+}
+-(IBAction) buttonReset:(UIButton *)sender
+{
+    [self resetGame];
 }
 @end
